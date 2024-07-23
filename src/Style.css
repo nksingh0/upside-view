@@ -1,0 +1,206 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-image: url('https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg');
+    color: #fff;
+    padding: 1rem 0;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#hh{
+    width: 70vw;
+}
+.header-content {
+    display: flex;
+}
+
+.logo h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #d4d4d4;
+    width: 70vw;
+    font-size: 1.2rem;
+    height: 40px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #141414;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    width: 10rem;
+}
+
+.search-bar button:hover {
+    background: #555;
+}
+
+/* Gallery */
+.gallery {
+    padding: 2rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 0.5rem;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.grid{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;              
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+#page-n{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+    background-size: cover;
+}
